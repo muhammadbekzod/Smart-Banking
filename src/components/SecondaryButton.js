@@ -13,7 +13,7 @@ function SecondaryButton({name}) {
 
 const SecondaryButtonStyled =  styled.button`
 background-color: var(--dark-primary);
-padding: .7rem 2rem;
+padding: 1rem 2rem;
 border-radius: 20px;
 outline: none;
 border: none;

@@ -1,6 +1,10 @@
 import styled from "styled-components";
 import CardSection from "./components/CardSection";
+import ChartSection from "./components/ChartSection";
+import FAQSection from "./components/FAQSection";
 import Header from "./components/Header";
+import MassagingSection from "./components/MassagingSection";
+import PaymentSection from "./components/PaymentSection";
 import {OuterLayout} from './styles/Layouts'
 
 function App() {
@@ -10,6 +14,10 @@ function App() {
       <OuterLayout>
         <MainStyled>
           <CardSection />
+          <ChartSection />
+          <MassagingSection />
+          <PaymentSection />
+          <FAQSection />
         </MainStyled>
       </OuterLayout>
     </div>

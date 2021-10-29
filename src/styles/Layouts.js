@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const OuterLayout = styled.section`
-    padding: 5rem 10rem;
+    padding: 5rem 18rem;
 `;
 
 export const InnerLayout = styled.section`
