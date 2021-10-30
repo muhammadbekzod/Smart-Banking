@@ -36,6 +36,9 @@ const FaqStyled = styled.section`
         width:60%;
         margin: 0 auto;
     }
+    .questions-con{
+        padding-top: 4rem;
+    }
     .lines{
         position: absolute;
         left: 0;

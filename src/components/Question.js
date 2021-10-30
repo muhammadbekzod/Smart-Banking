@@ -1,20 +1,55 @@
 import React, {useState} from 'react'
 import styled from 'styled-components';
+import plus from '../img/plus.svg'
 
 function Question({title, description}) {
-    const [toggle, setTootle] = useState(true);
+    const [toggle, setToggle] = useState(false);
+
+    const btnToggler = () => {
+        setToggle(!toggle);
+    }
     return (
         <QuestionStyled>
             <div className="q-con">
+                <div className="toggle-title">
                 <h4>{title}</h4>
+                 <button onClick={btnToggler}>
+                    <img src={plus} alt="" />
+                     </button>
+                     </div>
                 {toggle && <p>{description}</p>}
+                
             </div>
         </QuestionStyled>
     )
 }
 
 const QuestionStyled = styled.div`
-
-`;
+background-color: #fff;
+margin: 1rem 0;
+padding: 1.4rem 1rem;
+border-radius: 25px;
+transition: all .4s ease-in-out;
+p{
+    transition: all .4s ease-in-out;
+}
+h4{
+    color: #16194F;
+    transition: all .4s ease-in-out;
+    font-size: 1.3rem;
+}
+    .toggle-title{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transition: all .4s ease-in-out;
+        button{
+            background: transparent;
+            outline:none;
+            cursor: pointer;
+            border:none
+        }
+    }
+`;  
 
 export default Question;
