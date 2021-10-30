@@ -66,6 +66,9 @@ const PaymentStyled =styled.section`
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 3rem;
         padding-top: 7.5rem;
+        @media screen and (max-width: 689px){
+            grid-template-columns: repeat(1, 1fr);
+    }
     }
     .c-para{
         text-align: center;

@@ -44,7 +44,14 @@ function MassagingSection() {
 const MessageStyle = styled.section`
     .massage-con{
         display: grid;
-        grid-template-columns: repeat(2, 1fr)
+        grid-template-columns: repeat(2, 1fr); 
+        @media screen and (max-width: 845px){
+            grid-template-columns: repeat(1, 1fr);
+            .right-items{
+                margin-top: 20px;
+                margin-left: -25px;
+            }
+    }
     }
     .left-items{
         position: relative;

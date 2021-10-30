@@ -39,8 +39,14 @@ const ChartStyled = styled.section`
     .chart-con{
         display:grid;
         grid-template-columns: repeat(2, 1fr);
+        @media screen and (max-width: 1347px){
+            grid-template-columns: repeat(1, 1fr);
+    }
         .chart-left{
             width: 80%;
+            @media screen and (max-width: 1347px){
+            width:100%;
+            }
             .stats{
                 img{
                     cursor: pointer;
